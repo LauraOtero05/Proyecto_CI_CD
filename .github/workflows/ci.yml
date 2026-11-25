@@ -25,9 +25,9 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
       - name: Ejecutar lint
-        run: lint
+        run: npm run lint
       - name: Comprobar formato
-        run: format:check
+        run: npm run format:check
       - name: Ejecutar test unitario
-        run: test:unit
+        run: npm run test:unit
       # TODO: tres steps distintos: lint, format:check y test:unit

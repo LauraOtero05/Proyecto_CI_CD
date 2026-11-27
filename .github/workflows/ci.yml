@@ -27,7 +27,7 @@ jobs:
       - name: Ejecutar lint
         run: npm run lint
       - name: Prettier
-        run: prettier . --write
+        run: npx prettier . --write
       - name: Comprobar formato
         run: npm run format:check
       - name: Ejecutar test unitario
